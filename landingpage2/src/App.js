@@ -1,10 +1,22 @@
 import './App.css';
+import { About } from './components/Aboutus';
+import { Contact } from './components/Contact';
 import Landingpage from './components/Landingpage';
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { Login } from './components/Login';
 
 function App() {
   return (
     <div className="App">
-      <Landingpage />
+     <Router>
+      <Routes>
+        <Route path='/' element={<Landingpage />}/>
+        <Route path='/about' element={<About />}/>
+        <Route path='/contact' element={<Contact />}/>
+        <Route path='/login' element={<Login />}/>
+        <Route path='/pokemon' element={<Login />}/>
+      </Routes>
+     </Router>
     </div>
   );
 }
