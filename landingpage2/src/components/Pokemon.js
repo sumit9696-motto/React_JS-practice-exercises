@@ -46,9 +46,9 @@ export const Pokemonn=()=>{
 
                  {/* <img src={piku.image} alt={piku.name} /> */}
                    {piku && (
-        <div style={{ marginTop: "20px" }}>
+        <div style={{ marginTop: "20px" ,margin:"100px"}}>
           <h3>{piku.name.toUpperCase()}</h3>
-          <img src={piku.image} alt={piku.name} />
+          <img src={piku.image} alt={piku.name} style={{height:"200px",widows:"400px"}}/>
         </div>
       )}
 
