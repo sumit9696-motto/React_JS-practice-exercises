@@ -4,6 +4,8 @@ import { Contact } from './components/Contact';
 import Landingpage from './components/Landingpage';
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import { Login } from './components/Login';
+// import { Pokemonn } from './components/Pokemonn';
+import { Pokemonn } from './components/Pokemon';
 
 function App() {
   return (
@@ -14,7 +16,7 @@ function App() {
         <Route path='/about' element={<About />}/>
         <Route path='/contact' element={<Contact />}/>
         <Route path='/login' element={<Login />}/>
-        <Route path='/pokemon' element={<Login />}/>
+        <Route path='/pokemon' element={<Pokemonn />}/>
       </Routes>
      </Router>
     </div>
